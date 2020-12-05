@@ -12,7 +12,7 @@ using namespace std;
 vector<Data> datas;
 
 void read(bool showData){
-    fstream f("alert_sample",fstream::in);
+    fstream f("../alert_sample",fstream::in);
     if (f)
         cout<<"file opened"<<endl;
     else
@@ -158,7 +158,7 @@ void start(){
 }
 
 int main() {
-    read(false);
+    read(true);
     start();
 
     return 0;
